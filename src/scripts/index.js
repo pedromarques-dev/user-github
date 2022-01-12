@@ -46,7 +46,6 @@ async function getUserData(userName){
     user.setActivities(activitiesResponse)
 
     screen.renderUser(user)
-    console.log(activitiesResponse)
     
 
 }
