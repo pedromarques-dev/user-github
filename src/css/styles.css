@@ -124,7 +124,7 @@ main {
 /* REPOSITORIES */
 
 .container .profile-data .repositories h2{
-  margin-bottom: 30px;
+  margin: 70px 0 30px;
   text-align: center;
 }
 
@@ -150,6 +150,47 @@ main {
 
 .container .profile-data.hide{
   display: none;
+}
+
+.container .profile-data .container-follows {
+  width: 100%;
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.container .profile-data .container-follows .totalFollow {
+  color: white;
+  background-color: hotpink;
+  width: 100%;
+  border-radius: 50%;
+  border: 10px solid hotpink;
+  margin-top: 20px;
+}
+
+.container .profile-data .activities {
+  width: 100%;
+}
+
+.container .profile-data .activities h2{
+  margin: 50px;
+}
+
+.container .profile-data .activities ul li{
+  text-align: left;
+  padding: 15px 0;
+}
+
+.container .profile-data .status-repositories {
+  background-color: rgb(100, 38, 161);
+  border: 1px solid rgb(100, 38, 161);
+  border-radius: 10px;
+}
+
+.container .profile-data .status-repositories ul li{
+  padding: 5px;
 }
 
 @media (max-width: 1280px) {
