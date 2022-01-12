@@ -53,9 +53,15 @@ const screen = {
         }
 
         let activitiesItens = ''
-        user.activities.forEach(act => activitiesItens += `<li>${act.repo.name}: ${act.payload.commits[0].message}</li>`)
-
-            
+        user.activities.filter(act => {
+            if(act.payload.commits !== undefined){
+                activitiesItens += `<li><strong>${act.repo.name}</strong>: ${act.payload.commits[0].message}</li>`
+            } else {
+                activitiesItens += `<li><strong>${act.repo.name}</strong>: Não contém commits!</li>`
+            }
+        })
+      
+        if(user.activities.length > 0){
             this.userProfile.innerHTML +=
                                         `
                                         <div class= 'activities section'>
@@ -63,6 +69,7 @@ const screen = {
                                         <h2>Atividades</h2>
                                         <ul>${activitiesItens}</ul>
                                         </div>`
+        }
                                     
     },
     renderNotFound(){

@@ -183,6 +183,10 @@ main {
   padding: 15px 0;
 }
 
+.container .profile-data .activities ul li > strong {
+  font-weight: bold;
+}
+
 .container .profile-data .status-repositories {
   background-color: rgb(100, 38, 161);
   border: 1px solid rgb(100, 38, 161);
@@ -192,6 +196,8 @@ main {
 .container .profile-data .status-repositories ul li{
   padding: 5px;
 }
+
+
 
 @media (max-width: 1280px) {
   .container {
